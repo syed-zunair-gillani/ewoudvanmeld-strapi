@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_brokers_whies",
+  "info": {
+    "displayName": "Why",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "text"
+    },
+    "List": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.list"
+    }
+  }
+}

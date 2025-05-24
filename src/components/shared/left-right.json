@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_left_rights",
+  "info": {
+    "displayName": "Left-Right"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    },
+    "Label": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

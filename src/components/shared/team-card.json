@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_team_cards",
+  "info": {
+    "displayName": "Team-card"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "text"
+    },
+    "Designation": {
+      "type": "text"
+    },
+    "About": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

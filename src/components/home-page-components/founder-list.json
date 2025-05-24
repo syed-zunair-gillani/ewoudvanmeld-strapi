@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_components_founder_lists",
+  "info": {
+    "displayName": "Founder-List"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Stats": {
+      "type": "text"
+    }
+  }
+}

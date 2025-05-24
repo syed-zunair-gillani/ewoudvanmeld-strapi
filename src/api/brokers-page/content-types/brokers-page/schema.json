@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "brokers_pages",
+  "info": {
+    "singularName": "brokers-page",
+    "pluralName": "brokers-pages",
+    "displayName": "Brokers Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-banner"
+    },
+    "Why": {
+      "type": "component",
+      "repeatable": false,
+      "component": "brokers.why"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": false,
+      "component": "brokers.product"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_page_components_landing_solutions",
+  "info": {
+    "displayName": "Landing-solution"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

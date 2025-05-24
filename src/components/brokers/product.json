@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_brokers_products",
+  "info": {
+    "displayName": "Product"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    }
+  }
+}

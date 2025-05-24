@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-banner"
+    },
+    "Our_Mission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.left-right"
+    },
+    "Founder": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-components.founder"
+    },
+    "Our_value": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-page.our-value"
+    },
+    "our_process": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.info-card"
+    },
+    "our_team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.left-right"
+    }
+  }
+}

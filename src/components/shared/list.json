@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_lists",
+  "info": {
+    "displayName": "list"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    }
+  }
+}

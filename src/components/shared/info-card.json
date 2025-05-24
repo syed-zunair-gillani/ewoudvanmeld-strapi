@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_info_cards",
+  "info": {
+    "displayName": "Info-Card"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    },
+    "Button_Link": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_page_components_founders",
+  "info": {
+    "displayName": "Founder",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Label": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    },
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-components.founder-list"
+    }
+  }
+}

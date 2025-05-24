@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_about_page_our_values",
+  "info": {
+    "displayName": "Our-Value"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Feature": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.info-card"
+    }
+  }
+}

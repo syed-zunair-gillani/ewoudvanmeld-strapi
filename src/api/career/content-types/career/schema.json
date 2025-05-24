@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "Career"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.page-banner"
+    },
+    "our_team": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.left-right"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_home_page_components_heroes",
+  "info": {
+    "displayName": "Hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    },
+    "Button_1_Link": {
+      "type": "text"
+    },
+    "Button_2_Link": {
+      "type": "text"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}
