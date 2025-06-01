@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_product_list_product_lists",
+  "info": {
+    "displayName": "Product Lists"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Info": {
+      "type": "text"
+    }
+  }
+}

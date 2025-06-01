@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_property_types",
+  "info": {
+    "displayName": "PropertyTypes"
+  },
+  "options": {},
+  "attributes": {
+    "Items": {
+      "type": "text"
+    }
+  }
+}

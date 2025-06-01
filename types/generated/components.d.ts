@@ -105,6 +105,17 @@ export interface HomePageComponentsWhy extends Struct.ComponentSchema {
   };
 }
 
+export interface ProductListProductLists extends Struct.ComponentSchema {
+  collectionName: 'components_product_list_product_lists';
+  info: {
+    displayName: 'Product Lists';
+  };
+  attributes: {
+    Info: Schema.Attribute.Text;
+    Title: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedInfoCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_info_cards';
   info: {
@@ -171,6 +182,16 @@ export interface SharedPageBanner extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedPropertyTypes extends Struct.ComponentSchema {
+  collectionName: 'components_shared_property_types';
+  info: {
+    displayName: 'PropertyTypes';
+  };
+  attributes: {
+    Items: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedTeamCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_team_cards';
   info: {
@@ -195,11 +216,13 @@ declare module '@strapi/strapi' {
       'home-page-components.hero': HomePageComponentsHero;
       'home-page-components.landing-solution': HomePageComponentsLandingSolution;
       'home-page-components.why': HomePageComponentsWhy;
+      'product-list.product-lists': ProductListProductLists;
       'shared.info-card': SharedInfoCard;
       'shared.left-right': SharedLeftRight;
       'shared.link': SharedLink;
       'shared.list': SharedList;
       'shared.page-banner': SharedPageBanner;
+      'shared.property-types': SharedPropertyTypes;
       'shared.team-card': SharedTeamCard;
     }
   }
