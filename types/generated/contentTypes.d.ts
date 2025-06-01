@@ -498,6 +498,7 @@ export interface ApiCareerCareer extends Struct.SingleTypeSchema {
 export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
   collectionName: 'faqs';
   info: {
+    description: '';
     displayName: 'Faq';
     pluralName: 'faqs';
     singularName: 'faq';
@@ -506,7 +507,7 @@ export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Answer: Schema.Attribute.Text;
+    Answer: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -515,6 +516,7 @@ export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Question: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
     Type: Schema.Attribute.Enumeration<
       ['General Questions', 'Borrowers', 'Brokers', 'Products', 'Process']
     >;
@@ -636,14 +638,20 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Excerpt: Schema.Attribute.Text;
+    highlight: Schema.Attribute.Component<'shared.list', true>;
     Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Lists: Schema.Attribute.Component<'product-list.product-lists', true>;
+    loan_highlights_info: Schema.Attribute.Text;
+    loan_highlights_title: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::product.product'
     > &
       Schema.Attribute.Private;
+    Process: Schema.Attribute.Component<'shared.info-card', true>;
+    Property_type: Schema.Attribute.Component<'shared.property-types', true>;
     publishedAt: Schema.Attribute.DateTime;
     Slug: Schema.Attribute.UID<'Title'>;
     Title: Schema.Attribute.String;
