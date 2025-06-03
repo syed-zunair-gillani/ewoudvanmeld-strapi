@@ -58,6 +58,22 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.info-card"
+    },
+    "Banner_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Resources": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.left-right"
     }
   }
 }

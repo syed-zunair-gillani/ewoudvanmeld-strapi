@@ -397,6 +397,7 @@ export interface ApiAboutPageAboutPage extends Struct.SingleTypeSchema {
     our_team: Schema.Attribute.Component<'shared.left-right', true>;
     Our_value: Schema.Attribute.Component<'about-page.our-value', false>;
     publishedAt: Schema.Attribute.DateTime;
+    Resources: Schema.Attribute.Component<'shared.left-right', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -571,7 +572,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    faqs: Schema.Attribute.Relation<'oneToMany', 'api::faq.faq'>;
     Founder: Schema.Attribute.Component<'home-page-components.founder', false>;
     Hero: Schema.Attribute.Component<'home-page-components.hero', false>;
     LandingSolution: Schema.Attribute.Component<
@@ -585,10 +585,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    testimonials: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::testimonial.testimonial'
-    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -635,6 +631,9 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Banner_Image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -653,6 +652,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     Process: Schema.Attribute.Component<'shared.info-card', true>;
     Property_type: Schema.Attribute.Component<'shared.property-types', true>;
     publishedAt: Schema.Attribute.DateTime;
+    Resources: Schema.Attribute.Component<'shared.left-right', false>;
     Slug: Schema.Attribute.UID<'Title'>;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;

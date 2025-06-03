@@ -40,6 +40,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.left-right"
+    },
+    "Resources": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.left-right"
     }
   }
 }

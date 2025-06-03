@@ -26,9 +26,6 @@
     },
     "Answer": {
       "type": "blocks"
-    },
-    "title": {
-      "type": "string"
     }
   }
 }

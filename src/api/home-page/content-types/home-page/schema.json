@@ -30,16 +30,6 @@
       "type": "component",
       "repeatable": false,
       "component": "home-page-components.why"
-    },
-    "testimonials": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::testimonial.testimonial"
-    },
-    "faqs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::faq.faq"
     }
   }
 }
