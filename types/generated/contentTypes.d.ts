@@ -517,7 +517,6 @@ export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Question: Schema.Attribute.Text;
-    title: Schema.Attribute.String;
     Type: Schema.Attribute.Enumeration<
       ['General Questions', 'Borrowers', 'Brokers', 'Products', 'Process']
     >;
