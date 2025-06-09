@@ -454,12 +454,7 @@ export interface ApiBrokersPageBrokersPage extends Struct.SingleTypeSchema {
       'api::brokers-page.brokers-page'
     > &
       Schema.Attribute.Private;
-    products: Schema.Attribute.Component<'brokers.product', false>;
     publishedAt: Schema.Attribute.DateTime;
-    testimonials: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::testimonial.testimonial'
-    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

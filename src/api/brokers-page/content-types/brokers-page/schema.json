@@ -20,16 +20,6 @@
       "type": "component",
       "repeatable": false,
       "component": "brokers.why"
-    },
-    "products": {
-      "type": "component",
-      "repeatable": false,
-      "component": "brokers.product"
-    },
-    "testimonials": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::testimonial.testimonial"
     }
   }
 }

@@ -33,7 +33,7 @@ export interface BrokersWhy extends Struct.ComponentSchema {
   };
   attributes: {
     label: Schema.Attribute.Text;
-    List: Schema.Attribute.Component<'shared.list', false>;
+    List: Schema.Attribute.Component<'shared.list', true>;
     Title: Schema.Attribute.Text;
   };
 }
